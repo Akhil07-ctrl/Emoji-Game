@@ -1,0 +1,27 @@
+nav {
+    color: white;
+    background-color: #ffffff33;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .score {
+    margin-right: 25px;
+  }
+  
+  .top-score {
+    margin-right: 25px;
+  }
+  
