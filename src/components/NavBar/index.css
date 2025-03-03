@@ -1,27 +1,123 @@
 nav {
-    color: white;
-    background-color: #ffffff33;
-    display: flex;
-    justify-content: space-between;
+  color: white;
+  background-color: #ffffff33;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0; /* Reduced vertical padding for extra small devices */
+  height: 50px; /* Smaller height for extra small devices */
+  align-items: center;
+}
+
+.left {
+  margin-left: 8px; /* Reduced margin for extra small devices */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Smaller gap for extra small devices */
+}
+
+.left img {
+  width: 30px; /* Smaller logo for extra small devices */
+  height: 30px;
+}
+
+.left h1 {
+  font-size: 16px; /* Smaller font size for extra small devices */
+}
+
+.right {
+  margin-right: 8px; /* Reduced margin for extra small devices */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Smaller gap for extra small devices */
+}
+
+.score,
+.top-score {
+  font-size: 12px; /* Smaller text for extra small devices */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Small devices (phones, 360px and up) */
+@media (min-width: 360px) {
+  nav {
+    padding: 10px 0;
+    height: 60px; /* Slightly taller for small devices */
   }
-  
+
+  .left {
+    margin-left: 10px;
+    gap: 12px;
+  }
+
+  .left img {
+    width: 35px; /* Slightly larger logo */
+    height: 35px;
+  }
+
+  .left h1 {
+    font-size: 18px; /* Slightly larger font size */
+  }
+
+  .right {
+    margin-right: 10px;
+    gap: 12px;
+  }
+
+  .score,
+  .top-score {
+    font-size: 14px; /* Slightly larger text */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  nav {
+    height: 80px; /* Taller nav for larger screens */
+    padding: 0 20px; /* Horizontal padding */
+  }
+
   .left {
     margin-left: 20px;
-    display: flex;
-    align-items: center;
+    gap: 25px;
   }
-  
+
+  .left img {
+    width: 40px; /* Larger logo for tablets */
+    height: 40px;
+  }
+
+  .left h1 {
+    font-size: 24px; /* Larger font size */
+  }
+
   .right {
     margin-right: 20px;
-    display: flex;
-    align-items: center;
+    gap: 25px;
   }
-  
-  .score {
-    margin-right: 25px;
-  }
-  
+
+  .score,
   .top-score {
-    margin-right: 25px;
+    font-size: 16px; /* Larger text */
   }
-  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .score,
+  .top-score {
+    font-size: 18px; /* Even larger text for desktop */
+  }
+}
+
+/* Optional: Add transitions for interactive elements */
+nav {
+  transition: all 0.3s ease;
+}
+
+/* Touch target sizing for mobile */
+.right > *,
+.left > * {
+  padding: 6px; /* Slightly smaller padding for extra small devices */
+  min-width: 40px; /* Adjusted for extra small devices */
+  text-align: center;
+}

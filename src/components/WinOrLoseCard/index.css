@@ -1,39 +1,125 @@
 .play-again {
-    border: none;
-    background-color: #ffce27;
-    border-radius: 5px;
-    color: black;
-    padding: 10px 20px;
+  border: none;
+  background-color: #ffce27;
+  border-radius: 5px;
+  color: black;
+  padding: 6px 12px; /* Further reduced padding for extra small devices */
+  font-size: 12px; /* Smaller font size for extra small devices */
+  margin: 8px 0; /* Reduced margin for extra small devices */
+  width: 100%; /* Full width on mobile */
+  max-width: 180px; /* Slightly smaller max-width for extra small devices */
+}
+
+.win-lose-card {
+  color: white;
+  padding: 8px; /* Further reduced padding for extra small devices */
+  border-radius: 6px; /* Slightly smaller border radius */
+  background-color: #ffffff33;
+  display: flex;
+  flex-direction: column; /* Stack items vertically on mobile */
+  align-items: center; /* Center items */
+  margin-top: 20px; /* Reduced margin for extra small devices */
+  width: 90%; /* Take most of screen width */
+  max-width: 350px; /* Slightly smaller max-width for extra small devices */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Smaller gap for extra small devices */
+  text-align: center; /* Center text */
+  padding: 8px 0; /* Reduced padding for extra small devices */
+}
+
+.span {
+  color: black;
+  font-size: 12px; /* Smaller font size for extra small devices */
+}
+
+.best-score {
+  font-size: 14px; /* Smaller font size for extra small devices */
+  font-weight: bold;
+  margin: 6px 0; /* Reduced margin for extra small devices */
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 18px; /* Smaller font size for extra small devices */
+  line-height: 1.2; /* Tighter line spacing for extra small devices */
+  text-align: center;
+}
+
+/* Small devices (phones, 360px and up) */
+@media (min-width: 360px) {
+  .play-again {
+    padding: 8px 16px;
+    font-size: 14px;
+    max-width: 200px;
   }
-  
+
   .win-lose-card {
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #ffffff33;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
+    padding: 10px;
+    margin-top: 30px;
+    max-width: 400px;
   }
-  
+
   .left-content {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
   }
-  
+
   .span {
-    color: black;
+    font-size: 14px;
   }
-  
+
+  .best-score {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .heading {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) {
+  .play-again {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto;
+  }
+
+  .win-lose-card {
+    flex-direction: row; /* Horizontal layout on tablets+ */
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: 60px;
+    width: auto;
+    max-width: 600px;
+  }
+
+  .left-content {
+    gap: 20px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .span {
+    font-size: 16px;
+  }
+
   .best-score {
     font-size: 20px;
-    font-weight: bold;
   }
-  
+
   .heading {
-    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
   }
-  
+}

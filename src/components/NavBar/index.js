@@ -1,8 +1,6 @@
-import './index.css'
+import './index.css';
 
-const NavBar = props => {
-  const {score, topscore} = props
-
+const NavBar = ({ score, topscore }) => {
   return (
     <nav>
       <div className="left">
@@ -17,7 +15,7 @@ const NavBar = props => {
         <p className="top-score">Top Score: {topscore}</p>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
